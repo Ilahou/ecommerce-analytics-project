@@ -48,8 +48,11 @@ Staging
 Mart
 - Table : mart_customer_sales_base — grain : une ligne = une ligne de commande (order_item). Grain fin conservé pour permettre le filtrage par catégorie et par période sans incohérence de calcul. 
 - Périmètre : commandes delivered uniquement. Les deux jointures (dim_customers, dim_products) sont en INNER JOIN — validé par test préalable (0 orphelins dans les deux cas)
-- 
+
+
+  
 Qualité
-Fichier monitoring_run.sql — 14 tests en un seul run, résultat PASS/FAIL par ligne. Couvre : unicité des PK, nullité des colonnes critiques, valeurs acceptées, intégrité référentielle, CA non nul, stabilité du volume de produits sans catégorie (ref : 610).
+Fichier test_monitoring.sql — 14 tests en un seul run, résultat PASS/FAIL par ligne. 
+Couvre : unicité des PK, nullité des colonnes critiques, valeurs acceptées, intégrité référentielle, CA non nul, stabilité du volume de produits sans catégorie (ref : 610).
 
 
