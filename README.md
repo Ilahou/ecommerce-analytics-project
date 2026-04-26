@@ -33,12 +33,10 @@ Pourquoi garder un grain fin :
 
 Architecture du pipeline
 Raw (e_commerce_1)
-    │
-    ▼
-Staging (stg_*)          ← typage, nettoyage, déduplication
-    │
-    ▼
-Mart (dim_*, fct_*, mart_customer_sales_base)   ← modélisation en étoile + Table(s) exposée(s) au dashboard
+
+Staging (stg_*) : typage, nettoyage, déduplication
+
+Mart (dim_*, fct_*, mart_customer_sales_base) : modélisation en étoile + Table(s) exposée(s) au dashboard
 
 Staging
 - 5 vues (stg_customers, stg_orders, stg_order_items, stg_products, stg_category_translation). Standards appliqués uniformément : SAFE_CAST sur toutes les colonnes, TRIM + LOWER sur les strings
