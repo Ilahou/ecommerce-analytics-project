@@ -50,7 +50,7 @@ Mart
 
   
 Qualité
-Fichier test_monitoring.sql — 14 tests en un seul run, résultat PASS/FAIL par ligne. 
-Couvre : unicité des PK, nullité des colonnes critiques, valeurs acceptées, intégrité référentielle, CA non nul, stabilité du volume de produits sans catégorie (ref : 610).
+- Fichier test_monitoring.sql — 14 tests en un seul run, résultat PASS/FAIL par ligne. 
+- Couvre : unicité des PK, nullité des colonnes critiques, valeurs acceptées, intégrité référentielle, CA non nul, stabilité du volume de produits sans catégorie (ref : 610).
 
 
